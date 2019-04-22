@@ -126,10 +126,10 @@ This file is based on sun_checks.xml with customizations marked with ***
     <!-- Order of imports -->
     <!-- See http://checkstyle.sourceforge.net/config_imports.html#ImportOrder -->
     <module name="ImportOrder">
-      <property name="groups" value="/^(java|javax|org)\./" />
+      <property name="groups" value="/^java\./,javax,org,net" />
       <property name="ordered" value="true" />
       <property name="separated" value="true" />
-      <property name="option" value="bottom" />
+      <property name="option" value="top" />
       <property name="sortStaticImportsAlphabetically" value="true" />
     </module>
     <module name="IllegalImport" /> <!-- defaults to sun.* packages -->
